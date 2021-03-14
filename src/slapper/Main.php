@@ -37,7 +37,7 @@ use slapper\entities\{
     SlapperSlime, SlapperSnowman, SlapperSpider, SlapperSquid,
     SlapperStray, SlapperVex, SlapperVillager, SlapperVindicator,
     SlapperWitch, SlapperWither, SlapperWitherSkeleton, SlapperWolf,
-    SlapperZombie, SlapperZombieHorse, SlapperZombieVillager
+    SlapperZombie, SlapperZombieHorse, SlapperZombieVillager, SlapperGiant
 };
 
 use slapper\events\SlapperCreationEvent;
@@ -140,7 +140,7 @@ class Main extends PluginBase implements Listener {
                      SlapperFallingSand::class, SlapperElderGuardian::class, SlapperEndermite::class,
                      SlapperEvoker::class, SlapperGuardian::class, SlapperLlama::class,
                      SlapperPolarBear::class, SlapperShulker::class, SlapperVex::class,
-                     SlapperVindicator::class, SlapperWither::class
+                     SlapperVindicator::class, SlapperWither::class SlapperGiant::class
                  ] as $className) {
             Entity::registerEntity($className, true);
         }
